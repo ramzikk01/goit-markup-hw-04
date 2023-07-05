@@ -857,8 +857,9 @@ body {
 }
 
 .item-active:after {
+    position: relative;
     position: absolute;
-    bottom: -20px;
+    bottom: -1px;
     left: 0;
 
     content: '';
