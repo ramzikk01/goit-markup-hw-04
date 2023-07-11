@@ -179,6 +179,7 @@ body {
 }
 
 .item-active:after {
+    content: '';
     color: var(--button-acktiv-color);
     position: absolute;
     bottom: -20px;
