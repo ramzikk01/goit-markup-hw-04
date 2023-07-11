@@ -167,11 +167,15 @@ body {
     font-size: 16px;
     line-height: 1.50;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: #2E2F42;
     transition-property: color, background-color, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+}
+
+.active{
+    color: #404bbf;
 }
 
 .item-active:after {
@@ -377,18 +381,6 @@ body {
 .title-site {
     padding: 0;
     margin: 0;
-}
-
-.list-item::before{
-    content:"";
-    display: block;
-    height: 112px;
-    width: 264px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #F4F4FD;
-    border-radius: 4px;
-    margin-right: 0;
 }
 
 .item-section{
