@@ -160,6 +160,8 @@ body {
 }
 
 
+
+
 .site-nav a {
     font-family: 'Roboto';
     font-style: normal;
@@ -173,6 +175,7 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
+
 
 
 .item-active:after {
@@ -189,7 +192,7 @@ body {
     border-radius: 2px;
 }
 
-.item-active{
+.item-active a{
     color: #404bbf;
 
 }
