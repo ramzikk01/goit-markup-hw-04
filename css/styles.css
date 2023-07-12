@@ -452,6 +452,12 @@ body {
     margin-right: 0;
 }
 .size-icon-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
     width: 40px;
     height: 40px;
     border: none;
@@ -468,6 +474,11 @@ body {
 
 
 .size-icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     gap: 24px;
     width: 40px;
@@ -484,7 +495,7 @@ body {
 }
 
 .href{
-display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
