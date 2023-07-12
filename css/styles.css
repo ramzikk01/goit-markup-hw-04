@@ -174,9 +174,6 @@ body {
     position: relative;
 }
 
-.active{
-    color: #404bbf;
-}
 
 .item-active:after {
     content: '';
@@ -191,6 +188,12 @@ body {
     background-color: var(--button-acktiv-color);
     border-radius: 2px;
 }
+
+.item-active{
+    color: #404bbf;
+
+}
+
 
 
 /* .site-nav .active{
@@ -295,7 +298,7 @@ body {
 }
 
 .hero-fon{
-    max-width: 1440;
+    max-width: 1440px;
     height: 600px;
     margin-right: auto;
     margin-left: auto;
@@ -332,10 +335,7 @@ body {
     border: none;
     margin-left: auto;
     margin-right: auto;
-    transition-property: color, background-color, border-color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -481,12 +481,13 @@ body {
 }
 
 .href{
-    display: flex;
+display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
     width: 100%;
     height: 100%;
+    border-radius: 50px;
     
 }
 
@@ -516,6 +517,7 @@ body {
 }
 
 .customer-size{
+    width: calc((100% - 120px) / 6);
     /* width: 168px;
     padding-top: 16px;
     padding-right: 32px;
@@ -896,8 +898,8 @@ body {
     fill: var(--tittle-text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-icon :hover,
-.modal-icon :focus{
+.modal-btn :hover .modal-icon,
+.modal-btn:focus .modal-icon{
     fill: #ffffff;
 }
 
@@ -906,12 +908,12 @@ body {
     position: absolute; 
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     transform: translateY(100%);
 }
 
 .overlay-text{
+    width: 100%;
+    height: 100%;
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 40px;
@@ -926,14 +928,14 @@ body {
     letter-spacing: 0.32px;
 }
 
+.item-web:hover .overlay-text,
+.item-web:focus .overlay-text{
+    transform: translateY(0%);
+}
+
 .item {
     position: relative;
     overflow: hidden;
-}
-
-
-.item:hover .overlay{
-    transform: translateY(0%);
 }
 
 
